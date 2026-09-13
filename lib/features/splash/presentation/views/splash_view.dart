@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/features/splash/presentation/views/widgets/splash_view_body.dart';
 import 'package:flutter/material.dart';
 
 class SplashView extends StatelessWidget {
@@ -5,6 +6,6 @@ class SplashView extends StatelessWidget {
   static const String routeName = 'splash_view';
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const SplashViewBody();
   }
 }
