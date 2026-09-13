@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/core/functions/ongenerate_route.dart';
 import 'package:e_commerce_app/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,8 @@ class FruitsApp extends StatelessWidget {
       // title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: SplashView(),
+      initialRoute: SplashView.routeName,
+      onGenerateRoute: onGenerateRoute,
     );
   }
 }
