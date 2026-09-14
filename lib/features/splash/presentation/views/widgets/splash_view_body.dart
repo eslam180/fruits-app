@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/features/onBoarding/presentation/views/onBoarding_view.dart';
+import 'package:e_commerce_app/features/onBoarding/presentation/views/onboarding_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -10,12 +10,16 @@ class SplashViewBody extends StatefulWidget {
 }
 
 class _SplashViewBodyState extends State<SplashViewBody> {
-  void initstate() {
+  @override
+  void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.pushReplacementNamed(context, OnBoardingView.routeName);
     });
+  }
 
+  @override
+  void dispose() {
     super.dispose();
   }
 
